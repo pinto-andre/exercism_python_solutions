@@ -20,7 +20,7 @@ def rotate(text: str, key: int) -> str:
     for char in text:
         if char.islower():
             rotated += ascii_lowercase[(ascii_lowercase.index(char) + key) % 26]
-        if char.isupper():
+        elif char.isupper():
             rotated += ascii_uppercase[(ascii_uppercase.index(char) + key) % 26]
         else:
             rotated += char
