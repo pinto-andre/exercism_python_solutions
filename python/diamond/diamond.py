@@ -1,6 +1,15 @@
+from typing import List
+
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-def rows(letter):
+def rows(letter: str) -> List:
+    """
+    Function to create a diamond shape according to the given alphabet letter
+    """
+    if not isinstance(letter, str):
+        raise TypeError("Input must be a string")
+    if len(letter) > 1 or letter not in ALPHABET:
+        raise ValueError("Input must be a single and uppercased letter.")
     max_index = ALPHABET.index(letter)  # Index of the letter in the alphabet
     diamond = []
 
