@@ -1,9 +1,9 @@
-def is_paired(input_string):
+def is_paired(input_string: str) -> bool:
     stack = []
 
-    # Iterate through each character in the string
+    # Iterating through each character in the given string
     for char in input_string:
-        # If it's an opening bracket, push it onto the stack
+        # If it's an opening bracket, brace or parentheses push it onto the stack
         if char in '([{':
             stack.append(char)
         # If it's a closing bracket, check if it matches the top of the stack
