@@ -4,6 +4,10 @@ def rebase(input_base: int, digits: List[int], output_base: int) -> List[int]:
     """
     Function to translate between bases.
     """
+    if not isinstance(input_base, int) or not isinstance(output_base, int):
+        raise ValueError("Input_base and output_base must be integers")
+    if not isinstance(digits, List):
+        raise ValueError("digits must be a list of integers")
     # Validate arguments
     if input_base <= 1:
         raise ValueError("input base must be >= 2")
