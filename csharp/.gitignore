@@ -1,0 +1,71 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Mono auto-generated files
+mono_crash.*
+
+# VS Code files
+.vscode/
+
+# Visual Studio working files
+.vs/
+
+# Rider and IntelliJ IDEs
+.idea/
+*.sln.iml
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# Packaging
+*.nupkg
+*.snupkg
+*.nuspec
+
+# Environment variables
+.env
+
+# Coverage results
+coverage/
+*.coverage
+*.coveragexml
+
+# VS Test Results
+TestResults/
+*.trx
+*.userprefs
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# DotNet
+project.json.lock
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Resharper
+_ReSharper*/  
+*.DotSettings.user
+
+# C# directories created by Visual Studio
+*.vs/
